@@ -24,6 +24,8 @@ jobs:
 
     env:
       TF_ROOT: tfcode
+      INFRACOST_TERRAFORM_CLOUD_HOST: app.terraform.io
+      INFRACOST_TERRAFORM_CLOUD_TOKEN: ${{ secrets.INFRACOST_TERRAFORM_CLOUD_TOKEN }}
       # If you're using Terraform Cloud/Enterprise and have variables or private modules stored
       # on there, specify the following to automatically retrieve the variables:
       #   INFRACOST_TERRAFORM_CLOUD_TOKEN: ${{ secrets.TFC_TOKEN }}

@@ -5,9 +5,6 @@ site_description: >-
   My Resume
 copyright: Copyright &copy; 2022 Mathieu Albertini
 
-# repo_name: MyResume
-# repo_url: https://github.com/siddou/cv
-# edit_uri: edit/main/docs/
 
 theme:
   name: material
