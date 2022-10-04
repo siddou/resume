@@ -1,0 +1,77 @@
+site_name: Mathieu Albertini
+site_url: https://malbertini.ovh
+site_author: Mathieu Albertini
+site_description: >-
+  My Resume
+copyright: Copyright &copy; 2022 Mathieu Albertini
+
+# repo_name: MyResume
+# repo_url: https://github.com/siddou/cv
+# edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  favicon: assets/favicon.ico
+  logo: assets/cv.svg
+  # font:
+  #   text: Roboto
+  #   code: Source Code Pro
+  features:
+    # Highlight search terms when user searches for things
+    - search.highlight
+    # Offer most likely search result as a suggestion
+    - search.suggest
+    # Update url with the active anchor as highlighted in ToC
+    - navigation.tracking
+    # A back-to-top button can be shown when the user starts to scroll up again
+    - navigation.top
+    - navigation.tabs
+  # Folder for css and page overrides
+  custom_dir: overrides
+# theme_dir
+
+# Customization
+extra:
+  # analytics:
+  #   provider: google
+  #   property: !ENV GOOGLE_ANALYTICS_KEY
+
+  social:
+    - icon: material/github
+      link: https://github.com/siddou/resume
+    - icon: material/linkedin
+      link: https://www.linkedin.com/in/mathieu-albertini
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:mathieualbertini@duck.com
+
+nav:
+  - Resume: index.md
+  # - Blog: blog/index.html
+  - Cloud Resume Challenge: blog/posts/cloud-resume-challenge/index.html
+
+extra_css:
+  - stylesheets/counter.css
+  - stylesheets/tables.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
