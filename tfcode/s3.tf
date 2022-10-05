@@ -22,12 +22,14 @@ module "s3-bucket" {
 # }
 
 data "aws_iam_policy_document" "bucket_policy" {
+  policy_id = "PolicyForCloudFrontPrivateContent"
   statement {
+    sid    = "AllowCloudFrontServicePrincipal"
+    effect = "Allow"
     principals {
       type        = "Service"
       identifiers = ["cloudfront.amazonaws.com"]
     }
-    effect = "Allow"
     actions = [
       "s3:GetObject",
     ]
@@ -41,7 +43,3 @@ data "aws_iam_policy_document" "bucket_policy" {
     }
   }
 }
-
-#to add
-#      "Id": "PolicyForCloudFrontPrivateContent",
-#                "Sid": "AllowCloudFrontServicePrincipal",
