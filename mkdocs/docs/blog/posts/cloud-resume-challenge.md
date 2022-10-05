@@ -34,6 +34,7 @@ insert diagram here
 - access-keys is bad, SSO?
 - <del>fix gitlab workflow<del>
 - fix invalidate in CloudFront
-- fix terraform running "module.lambda.null_resource.archive[0]" on each run.
+- fix terraform running "module.lambda.null_resource.archive[0]" each run.
+    - https://github.com/hashicorp/terraform-provider-aws/issues/17989
 - <del>fix blog path: /blog/index.html<del>
 - <del>fix security headers<del>
