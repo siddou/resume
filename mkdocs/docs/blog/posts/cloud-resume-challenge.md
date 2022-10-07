@@ -13,7 +13,7 @@ This is a 16-step project that aims to familiarize its participants with the fun
 
 It started as a basic HTML page with a bit of CSS and a basic Javascript counter using https://api.countapi.xyz.
 
-It growed into a static site generator with a self hosted counter (in progress).
+It growed into a static site generator with a self hosted counter.
 
 ## Pre-requisite
 IAM user for Terraform with Access keys and permissions to Route53, API Gateway, CloudFront, CertificateManager, KeyManagementService, DynamoDB,S3,Lambda, CloudWatch, IAM.
@@ -33,7 +33,7 @@ insert diagram here
 
 - access-keys is bad, SSO?
 - <del>fix gitlab workflow<del>
-- fix invalidate in CloudFront
+- <del>fix invalidate in CloudFront<del>
 - fix terraform running "module.lambda.null_resource.archive[0]" each run.
     - https://github.com/hashicorp/terraform-provider-aws/issues/17989
 - <del>fix blog path: /blog/index.html<del>

@@ -21,4 +21,5 @@ module "apigateway-v2" {
       payload_format_version = "2.0"
     }
   }
+  disable_execute_api_endpoint = true
 }
