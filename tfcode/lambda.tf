@@ -21,7 +21,12 @@ module "lambda" {
   allowed_triggers = {
     AllowExecutionFromAPIGateway = {
       service    = "apigateway"
-      source_arn = "${module.apigateway-v2.apigatewayv2_api_execution_arn}/api/*"
+      source_arn = "${module.apigateway-v2.apigatewayv2_api_execution_arn}/*/*/${function_name}"
+      # deployment, Stage: $default
+      # security, autorization none  
+      # cors: no
+      # method get integration_method 
+      # Detailed metrics enabled: No
     }
   }
   attach_policy_statements = true

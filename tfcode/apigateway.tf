@@ -2,11 +2,11 @@ module "apigateway-v2" {
   source  = "terraform-aws-modules/apigateway-v2/aws"
   version = "~> 2.0.0"
 
-  name                        = "counter-http-${random_pet.this.id}"
-  domain_name                 = "counter.${var.AWS_DOMAIN_NAME}"
-  domain_name_certificate_arn = module.acm-apigateway.acm_certificate_arn
-  description                 = "Counter API"
-  protocol_type               = "HTTP"
+  name = "counter-http-${random_pet.this.id}"
+  # domain_name                 = "counter.${var.AWS_DOMAIN_NAME}"
+  # domain_name_certificate_arn = module.acm-apigateway.acm_certificate_arn
+  description   = "Counter API"
+  protocol_type = "HTTP"
 
   # body = templatefile("./src/swagger.yml", {
   #   function_arn = module.lambda.lambda_function_arn
@@ -19,7 +19,7 @@ module "apigateway-v2" {
   }
 
   integrations = {
-    "ANY /api" = {
+    "GET /${module.lambda.lambda_function_name}" = {
       lambda_arn             = module.lambda.lambda_function_arn
       payload_format_version = "2.0"
     }
