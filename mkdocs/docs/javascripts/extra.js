@@ -5,7 +5,7 @@ const updateCounter = async () => {
         "https://counter.malbertini.ovh/increment"
     );
     const count = await data.json();
-    counter.innerHTML = count.N;
+    counter.innerHTML = count.value;
     counter.style.filter = "blur(0)";
 };
 
