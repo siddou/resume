@@ -19,12 +19,19 @@ module "apigateway-v2" {
   }
 
   integrations = {
-    "GET /${module.lambda.lambda_function_name}" = {
+    # "GET /${module.lambda.lambda_function_name}" = {
+    #   lambda_arn             = module.lambda.lambda_function_arn
+    #   payload_format_version = "2.0"
+    # }
+    "GET /increment" = {
+      lambda_arn             = module.lambda.lambda_function_arn
+      payload_format_version = "2.0"
+    }
+    "ANY /error" = {
       lambda_arn             = module.lambda.lambda_function_arn
       payload_format_version = "2.0"
     }
   }
-
 }
 
 
