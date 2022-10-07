@@ -16,13 +16,13 @@ module "dynamodb-table" {
   ]
 }
 
-resource "aws_dynamodb_table_item" "view-count" {
-  table_name = module.dynamodb-table.dynamodb_table_id
-  hash_key   = "stat"
-  item       = <<ITEM
-{
-  "stat": {"S": "view-count"},
-  "Quantity": {"N": "0"}
-}
-ITEM
-}
+# resource "aws_dynamodb_table_item" "view-count" {
+#   table_name = module.dynamodb-table.dynamodb_table_id
+#   hash_key   = "stat"
+#   item       = <<ITEM
+# {
+#   "stat": {"S": "view-count"},
+#   "Quantity": {"N": "0"}
+# }
+# ITEM
+# }
