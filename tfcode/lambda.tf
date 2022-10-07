@@ -21,7 +21,7 @@ module "lambda" {
   allowed_triggers = {
     AllowExecutionFromAPIGateway = {
       service    = "apigateway"
-      source_arn = "${module.apigateway-v2.apigatewayv2_api_execution_arn}/*/*/${function_name}"
+      source_arn = "${module.apigateway-v2.apigatewayv2_api_execution_arn}/*/*/counter-lambda-${random_pet.this.id}"
       # deployment, Stage: $default
       # security, autorization none  
       # cors: no
