@@ -2,8 +2,7 @@ resource "aws_cloudwatch_log_group" "counter-lambda" {
   name              = "/aws/lambda/counter-lambda-${random_pet.this.id}"
   retention_in_days = 90
 }
-#data "aws_caller_identity" "current" {}
-module "lambda" {
+module "counterlambda" {
   source  = "terraform-aws-modules/lambda/aws"
   version = "~> 3.3.1"
 
@@ -35,5 +34,4 @@ module "lambda" {
       resources = [module.dynamodb-table.dynamodb_table_arn]
     },
   }
-
 }
