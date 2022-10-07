@@ -12,6 +12,13 @@ module "apigateway-v2" {
     throttling_burst_limit   = 100
     throttling_rate_limit    = 100
   }
+  #allow   Access-Control-Allow-Origin https://malbertini.ovh
+  cors_configuration = {
+    # allow_headers = ["content-type", "x-amz-date", "authorization", "x-api-key", "x-amz-security-token", "x-amz-user-agent"]
+    # allow_methods = ["*"]
+    allow_origins = ["https://${var.AWS_DOMAIN_NAME}"]
+  }
+
   integrations = {
     "GET /increment" = {
       lambda_arn             = module.counterlambda.lambda_function_arn
@@ -20,3 +27,13 @@ module "apigateway-v2" {
   }
 }
 
+# resource "aws_apigatewayv2_api" "lambda" {
+#   name          = "lambda_gw_api"
+#   protocol_type = "HTTP"
+#   cors_configuration {
+#     allow_origins = ["https://www.mywebsite.fr"]
+#     allow_methods = ["POST", "GET", "OPTIONS"]
+#     allow_headers = ["content-type"]
+#     max_age = 300
+#   }
+# }
