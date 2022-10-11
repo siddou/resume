@@ -24,11 +24,6 @@ module "s3-bucket" {
     }
   }
 }
-
-# resource "aws_kms_key" "objects" {
-#   description = "KMS key is used to encrypt bucket objects"
-# }
-
 data "aws_iam_policy_document" "bucket_policy" {
   policy_id = "PolicyForCloudFrontPrivateContent"
   statement {

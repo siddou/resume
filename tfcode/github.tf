@@ -34,7 +34,6 @@ resource "aws_iam_user" "GH_SA" {
 resource "aws_iam_access_key" "GH_SA" {
   user = aws_iam_user.GH_SA.name
 }
-
 data "aws_caller_identity" "current" {}
 resource "aws_iam_policy" "GH_SA" {
   name        = "GH_SA_policy"
@@ -60,11 +59,6 @@ resource "aws_iam_policy" "GH_SA" {
           "arn:aws:cloudfront::${data.aws_caller_identity.current.account_id}:distribution/${module.cloudfront.cloudfront_distribution_id}",
         ],
       },
-      # {
-      #   Effect   = "Allow"
-      #   Action   = ["kms:GenerateDataKey", ]
-      #   Resource = [aws_kms_key.objects.arn, ],
-      # },
     ]
   })
 }
