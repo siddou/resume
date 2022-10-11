@@ -20,6 +20,7 @@ module "s3-bucket" {
       apply_server_side_encryption_by_default = {
         sse_algorithm = "aws:kms"
       }
+      bucket_key_enabled = true
     }
   }
 }
