@@ -34,6 +34,8 @@ resource "aws_iam_user" "GH_SA" {
 resource "aws_iam_access_key" "GH_SA" {
   user = aws_iam_user.GH_SA.name
 }
+
+data "aws_caller_identity" "current" {}
 resource "aws_iam_policy" "GH_SA" {
   name        = "GH_SA_policy"
   description = "GH_SA policy"
@@ -42,7 +44,10 @@ resource "aws_iam_policy" "GH_SA" {
     Statement = [
       {
         Effect = "Allow"
-        Action = ["s3:*", ]
+        Action = [
+          "s3:PutObject",
+          "s3:ListBucket",
+        ]
         Resource = [
           module.s3-bucket.s3_bucket_arn,
           "${module.s3-bucket.s3_bucket_arn}/*",
@@ -52,7 +57,7 @@ resource "aws_iam_policy" "GH_SA" {
         Effect = "Allow"
         Action = ["cloudfront:CreateInvalidation", ]
         Resource = [
-          "arn:aws:cloudfront::*:distribution/${module.cloudfront.cloudfront_distribution_id}",
+          "arn:aws:cloudfront::${data.aws_caller_identity.current.account_id}:distribution/${module.cloudfront.cloudfront_distribution_id}",
         ],
       },
       # {
