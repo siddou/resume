@@ -38,3 +38,5 @@ insert diagram here
     - https://github.com/hashicorp/terraform-provider-aws/issues/17989
 - <del>fix blog path: /blog/index.html<del>
 - <del>fix security headers<del>
+- <del>s3 sse<del>
+- Tag S3 objects
