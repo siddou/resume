@@ -15,14 +15,6 @@ module "s3-bucket" {
   versioning = {
     enabled = false
   }
-  server_side_encryption_configuration = {
-    rule = {
-      apply_server_side_encryption_by_default = {
-        sse_algorithm = "aws:kms"
-      }
-      bucket_key_enabled = true
-    }
-  }
 }
 data "aws_iam_policy_document" "bucket_policy" {
   policy_id = "PolicyForCloudFrontPrivateContent"
