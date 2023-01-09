@@ -20,18 +20,14 @@ IAM user for Terraform with Access keys and permissions to Route53, API Gateway,
 
 ## Workflow
 
-```
-insert diagram here
-```
-
-- Terraform Cloud: When I push to tfcode -> Deploy ressources with Terraform
-- Gitlab Actions: When I push to mkdocs -> Generate site folder -> copy to s3 bucket -> invalidate CloudFront
+- Terraform Cloud: push tfcode -> Deploy ressources with Terraform
+- Gitlab Actions: push to mkdocs -> Generate site folder -> copy to s3 bucket -> invalidate previous CloudFront content
 
 
 
 ## To-do
 
-- access-keys is bad
+- access-keys
   - https://github.com/marketplace/actions/configure-aws-credentials-action-for-github-actions
   - https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html
 - <del>fix gitlab workflow<del>
@@ -42,4 +38,4 @@ insert diagram here
 - <del>fix security headers<del>
 - s3 sse: need to pay for a customer managed key.
   - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html
-
+- security headers on counter URL
