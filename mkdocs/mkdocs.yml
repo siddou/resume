@@ -1,11 +1,15 @@
+# Project information
 site_name: Mathieu Albertini
 site_url: https://malbertini.ovh
 site_author: Mathieu Albertini
 site_description: >-
   My Resume
-copyright: Copyright &copy; 2022 Mathieu Albertini
 
+# Repository
+repo_name: siddou/resume
+repo_url: https://github.com/siddou/resume
 
+# Configuration
 theme:
   name: material
   palette:
@@ -44,13 +48,9 @@ theme:
 
 # Customization
 extra:
-  # analytics:
-  #   provider: google
-  #   property: !ENV GOOGLE_ANALYTICS_KEY
-
   social:
     - icon: material/github
-      link: https://github.com/siddou/resume
+      link: https://github.com/siddou
     - icon: material/linkedin
       link: https://www.linkedin.com/in/mathieu-albertini
     - icon: fontawesome/solid/paper-plane
