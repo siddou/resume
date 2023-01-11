@@ -2,7 +2,7 @@ data "aws_cloudfront_cache_policy" "cache_policy" {
   name = var.cache_policy_name
 }
 resource "aws_cloudfront_response_headers_policy" "security_headers_policy" {
-  name    = "SecurityHeadersPolicy-Aplus-2022"
+  name    = "SecurityHeadersPolicy-Aplus-2023"
   comment = "add security_header"
   security_headers_config {
     strict_transport_security {
@@ -34,7 +34,7 @@ resource "aws_cloudfront_response_headers_policy" "security_headers_policy" {
     items {
       override = false
       header   = "permissions-policy"
-      value    = "battery=(), camera=(), geolocation=(), microphone=()"
+      value    = "camera=(), geolocation=(), microphone=()"
     }
     items {
       override = true
