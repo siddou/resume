@@ -1,0 +1,21 @@
+{% assign footer = data.footer %}
+{% if footer and footer.display %}
+<footer class="footer">
+    <div class="text-center">
+        <small class="copyright">Copyright © {{ site.time | date: site.date_format | default: "%Y-%m-%d" }}
+            {% if basic.name %}
+            {{ basic.name }}
+            {% endif %}
+        </small>
+    </div>
+    <div class="text-center">
+        <small class="copyright">
+        {% if contact.website %}
+            <a href="https://{{ contact.website }}/blog/posts/cloud-resume-challenge/index.html" target="_blank"> See How this site was built.</a>
+        {% endif %}
+        Visit count:
+        <a id="counter">0</a>
+        </small>
+    </div>
+</footer>
+{% endif %}
