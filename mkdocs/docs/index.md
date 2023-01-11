@@ -41,7 +41,6 @@ hide:
 
 ### Current
 [![Image title](assets/DevOpsFoundation.jpg){ width="150" }](https://www.credential.net/975b27b9-5c29-4a40-a8be-040b335b40f6?username=mathieualbertini118704){:target="_blank"}
-
 [![Image title](assets/aws-certified-solutions-architect-associate.png){ width="150" }](https://www.credly.com/badges/0bb896f5-3329-4d88-9c3a-7a18203aafcc/public_url){:target="_blank"}
 
 ### Expired
