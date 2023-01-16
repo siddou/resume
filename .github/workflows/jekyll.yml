@@ -34,7 +34,7 @@ jobs:
         aws-region: ${{ secrets.AWS_REGION }}
     - name: Deploy
       run: |
-        aws s3 sync online-resume/_site s3://${{ secrets.AWS_BUCKET }}/
+        aws s3 sync online-resume/_site s3://${{ secrets.AWS_BUCKET }}/cv
     - name: Invalidate CloudFront
       uses: chetan/invalidate-cloudfront-action@v2
       env:

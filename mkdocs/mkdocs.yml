@@ -57,7 +57,8 @@ extra:
       link: mailto:mathieualbertini@duck.com
 
 nav:
-  - Resume: index.md
+  # - Resume: index.md
+  - Resume: cv/cv.html
   # - Blog: blog/index.html
   - Cloud Resume Challenge: blog/posts/cloud-resume-challenge/index.html
 
