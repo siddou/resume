@@ -60,7 +60,7 @@ nav:
   # - Resume: index.md
   - Resume: cv/index.html
   # - Blog: blog/index.html
-  - Cloud Resume Challenge: blog/posts/cloud-resume-challenge/index.html
+  # - Cloud Resume Challenge: blog/posts/cloud-resume-challenge/index.html
 
 extra_css:
   - stylesheets/counter.css
