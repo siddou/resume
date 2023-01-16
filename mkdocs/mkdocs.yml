@@ -58,7 +58,7 @@ extra:
 
 nav:
   # - Resume: index.md
-  - Resume: cv/cv.html
+  - Resume: cv/index.html
   # - Blog: blog/index.html
   - Cloud Resume Challenge: blog/posts/cloud-resume-challenge/index.html
 
