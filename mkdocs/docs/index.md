@@ -27,7 +27,7 @@ IAM user for Terraform with Access keys and permissions to Route53, API Gateway,
 
 ## To-do
 
-- access-keys
+- replace access-keys
   - https://github.com/marketplace/actions/configure-aws-credentials-action-for-github-actions
   - https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html
 - <del>fix gitlab workflow<del>
