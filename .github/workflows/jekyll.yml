@@ -35,8 +35,8 @@ jobs:
     - name: Deploy
       run: |
         aws s3 sync online-resume/_site s3://${{ secrets.AWS_BUCKET }}/cv
-        aws s3 cp online-resume/_site/assets/stylesheets/main.css s3://${{ secrets.AWS_BUCKET }}/assets/stylesheets
-        aws s3 cp online-resume/_site/assets/stylesheets/main.css.map s3://${{ secrets.AWS_BUCKET }}/assets/stylesheets
+        aws s3 cp online-resume/_site/assets/stylesheets/main.css s3://${{ secrets.AWS_BUCKET }}/assets/stylesheets/main.css
+        aws s3 cp online-resume/_site/assets/stylesheets/main.css.map s3://${{ secrets.AWS_BUCKET }}/assets/stylesheets/main.css.map
     - name: Invalidate CloudFront
       uses: chetan/invalidate-cloudfront-action@v2
       env:
