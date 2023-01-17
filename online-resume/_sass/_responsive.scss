@@ -6,7 +6,7 @@
     }
 
     .wrapper {
-        padding: math.div($spacing-unit, 2);
+        padding: $spacing-unit / 2;
 
         section {
             .upper-row {
@@ -17,7 +17,7 @@
                 .degree {
                     position: static;
                     display: block;
-                    margin-top: math.div($spacing-unit, 4);
+                    margin-top: $spacing-unit / 4;
                 }
             }
         }

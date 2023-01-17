@@ -72,7 +72,7 @@ h2 {
 
 p {
     line-height: $base-line-height;
-    margin-bottom: math.div($spacing-unit, 4);
+    margin-bottom: $spacing-unit / 4;
 }
 
 small {
@@ -80,7 +80,7 @@ small {
 }
 
 .footer {
-    padding-top: math.div($spacing-unit, 2);
+    padding-top: $spacing-unit / 2;
 
     // .copyright {
     //     color: $text-second-color;
@@ -100,7 +100,7 @@ small {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 
     section {
-        margin-bottom: math.div($spacing-unit, 4);
+        margin-bottom: $spacing-unit / 4;
 
         .section-title {
             text-transform: uppercase;
@@ -109,7 +109,7 @@ small {
             color: $theme-color;
             position: relative;
             margin-top: 0;
-            margin-bottom: math.div($spacing-unit, 4);
+            margin-bottom: $spacing-unit / 4;
             border-bottom: 1px dashed rgba($theme-color, 25%);
         }
 
@@ -117,7 +117,7 @@ small {
             .markdown {
                 ul,
                 ol {
-                    margin-bottom: math.div($spacing-unit, 4);
+                    margin-bottom: $spacing-unit / 4;
                     padding-inline-start: $spacing-unit;
                 }
             }
@@ -165,7 +165,7 @@ small {
                 font-size: $huge-font-size;
                 font-weight: $base-font-weight * 2,25;
                 margin-top: 0;
-                margin-bottom: math.div($spacing-unit, 4);
+                margin-bottom: $spacing-unit / 4;
             }
 
             .title {
@@ -173,11 +173,11 @@ small {
                 font-size: $middle-font-size;
                 font-weight: $base-font-weight;
                 margin-top: 0;
-                margin-bottom: math.div($spacing-unit, 4);
+                margin-bottom: $spacing-unit / 4;
             }
 
             .contact ul {
-                margin-bottom: math.div($spacing-unit, 4);
+                margin-bottom: $spacing-unit / 4;
 
                 li {
                     display: inline;
@@ -222,7 +222,7 @@ small {
     .languages,
     .interests {
         ul {
-            margin-bottom: math.div($spacing-unit, 4);
+            margin-bottom: $spacing-unit / 4;
 
             li {
                 display: inline;
