@@ -1,3 +1,4 @@
+@use 'sass:math';
 /* Extra small devices (phones, less than 768px) */
 @media only screen and (max-width: 767px) {
     body {
@@ -5,7 +6,7 @@
     }
 
     .wrapper {
-        padding: $spacing-unit / 2;
+        padding: math.div($spacing-unit, 2);
 
         section {
             .upper-row {
@@ -16,7 +17,7 @@
                 .degree {
                     position: static;
                     display: block;
-                    margin-top: $spacing-unit / 4;
+                    margin-top: math.div($spacing-unit, 4);
                 }
             }
         }

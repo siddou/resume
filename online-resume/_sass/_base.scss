@@ -1,13 +1,45 @@
-html {
+@use 'sass:math';
+
+html, html[data-theme="light"] {
+    --link-color: rgb(0, 112, 201);
+    --main-background-color: hsl(0, 0%, 100%);
+    --main-text-color: hsl(0, 0%, 20%);
     font-size: $base-font-size;
     scroll-behavior: smooth;
     touch-action: manipulation;
+
 }
 
+html[data-theme="dark"] {
+  --link-color: rgb( 100, 210, 255);
+  --main-background-color: hsl(0, 0%, 20%);
+  --main-text-color: hsl(0, 0%, 85%); 
+}
+
+
+@media (prefers-color-scheme: dark) {
+    html, html[data-theme="dark"] {
+      --link-color: rgb( 100, 210, 255);
+    	--main-background-color: hsl(0, 0%, 20%);
+    	--main-text-color: hsl(0, 0%, 85%); 
+    }
+
+    html[data-theme="light"] {
+		  --link-color: rgb(0, 112, 201);
+    	--main-background-color: hsl(0, 0%, 90%);
+  	 --main-text-color: hsl(0, 0%, 20%);
+  } 
+}
+
+
 body {
+	background-color: var(--main-background-color);
+	color: var(--main-text-color);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	// padding: 1em;
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background: $background-color;
+    // color: $text-color;
+    // background: $background-color;
     padding: $spacing-unit;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -17,30 +49,58 @@ a {
     &,
     &:visited,
     &:hover {
-        color: $text-color;
+        color: var(--link-color);
         text-decoration: none;
     }
 }
 
+// article {
+// 	max-width: 650px; 
+// 	margin: 2em auto;
+// }
+
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 2em;
+}
+
+
 p {
     line-height: $base-line-height;
-    margin-bottom: $spacing-unit / 4;
+    margin-bottom: math.div($spacing-unit, 4);
 }
 
 small {
     font-weight: $base-font-weight;
 }
 
+.footer {
+    padding-top: math.div($spacing-unit, 2);
+
+    // .copyright {
+    //     color: $text-second-color;
+
+    //     .fa-heart {
+    //         color: $heart-color;
+    //     }
+    // }
+}
+
 .wrapper {
     position: relative;
-    background: $wrapper-color;
+    // background: $wrapper-color;
     max-width: $content-width;
     margin: 0 auto;
     padding: $spacing-unit * 2;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 
     section {
-        margin-bottom: $spacing-unit / 4;
+        margin-bottom: math.div($spacing-unit, 4);
 
         .section-title {
             text-transform: uppercase;
@@ -49,7 +109,7 @@ small {
             color: $theme-color;
             position: relative;
             margin-top: 0;
-            margin-bottom: $spacing-unit / 4;
+            margin-bottom: math.div($spacing-unit, 4);
             border-bottom: 1px dashed rgba($theme-color, 25%);
         }
 
@@ -57,7 +117,7 @@ small {
             .markdown {
                 ul,
                 ol {
-                    margin-bottom: $spacing-unit / 4;
+                    margin-bottom: math.div($spacing-unit, 4);
                     padding-inline-start: $spacing-unit;
                 }
             }
@@ -105,19 +165,19 @@ small {
                 font-size: $huge-font-size;
                 font-weight: $base-font-weight * 2,25;
                 margin-top: 0;
-                margin-bottom: $spacing-unit / 4;
+                margin-bottom: math.div($spacing-unit, 4);
             }
 
             .title {
-                color: $text-second-color;
+                // color: $text-second-color;
                 font-size: $middle-font-size;
                 font-weight: $base-font-weight;
                 margin-top: 0;
-                margin-bottom: $spacing-unit / 4;
+                margin-bottom: math.div($spacing-unit, 4);
             }
 
             .contact ul {
-                margin-bottom: $spacing-unit / 4;
+                margin-bottom: math.div($spacing-unit, 4);
 
                 li {
                     display: inline;
@@ -162,7 +222,7 @@ small {
     .languages,
     .interests {
         ul {
-            margin-bottom: $spacing-unit / 4;
+            margin-bottom: math.div($spacing-unit, 4);
 
             li {
                 display: inline;
@@ -173,18 +233,6 @@ small {
                     margin: 0 0.25em;
                 }
             }
-        }
-    }
-}
-
-.footer {
-    padding-top: $spacing-unit / 2;
-
-    .copyright {
-        color: $text-second-color;
-
-        .fa-heart {
-            color: $heart-color;
         }
     }
 }

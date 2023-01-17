@@ -31,7 +31,7 @@ profile:
   details: |
     + Connecting people with technology solutions that are easy to use, affordable, and sustainable over time.
     + Capable of leading technical people in customer-facing environments.
-    + Strong skills with configuration management tools and automation. 
+    + Strong skills with configuration management tools and automation.
     + Extensive experience with the configuration, hardening, and maintenance of various Linux distributions.
     + Able to set up vital infrastructure components in the Clouds or On-Prem, including load balancers, LDAP, DNS, MAIL, web/application servers.
     + Comfortable working with virtualization and containers in large-scale environments.
@@ -156,7 +156,7 @@ certificates:
       link: https://www.credential.net/975b27b9-5c29-4a40-a8be-040b335b40f6?username=mathieualbertini118704
       details: |
 
-    - name: "SAA-C02: AWS Certified Solutions Architect – Associate"
+    - name: "SAA-C02: AWS Certified Solutions Architect -Associate"
       authority: Amazon Web Services (AWS)
       time: 2021
       link: https://www.credly.com/badges/0bb896f5-3329-4d88-9c3a-7a18203aafcc/public_url
@@ -168,7 +168,7 @@ certificates:
       link: https://www.credly.com/badges/cc9fd11b-7b1e-4e17-9824-b032ce936afd/public_url
       details: |
 
-    - name: CompTIA Security+ ceCompTIA Security+ ce
+    - name: CompTIA Security+ ce
       authority: CompTIA
       time: 2016
       link: https://www.credly.com/badges/23d841f3-1307-4e52-b82e-1fa30f15d61c/public_url
