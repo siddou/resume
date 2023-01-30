@@ -13,7 +13,7 @@
 
                     <div class="upper-row">
                         {% if certificate.link %}
-                        <div class="certificate"><a href="{{ certificate.link }}" target="_blank">{{ certificate.name }}</a></div>
+                        <div class="certificate"><a href="{{ certificate.link }}" target="_blank" rel="noopener noreferrer">{{ certificate.name }}</a></div>
                         {% else %}
                         <div class="certificate">{{ certificate.name }}</div>
                         {% endif %}

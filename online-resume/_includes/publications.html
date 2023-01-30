@@ -19,7 +19,7 @@
             {% if publication.title %}
             <p class="title">
                 {% if publication.link %}
-                <a href="{{ publication.link }}" target="_blank">{{ publication.title }}</a>
+                <a href="{{ publication.link }}" target="_blank" rel="noopener noreferrer">{{ publication.title }}</a>
                 {% else %}
                 {{ publication.title }}
                 {% endif %}
