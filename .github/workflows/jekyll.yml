@@ -35,7 +35,7 @@ jobs:
     - name: Deploy
       run: |
         aws s3 cp online-resume/_site/index.html s3://${{ secrets.AWS_BUCKET }}/cv/index.html
-        aws s3 cp online-resume/_site/robots.html s3://${{ secrets.AWS_BUCKET }}/cv/robots.html
+        aws s3 cp online-resume/_site/robots.txt s3://${{ secrets.AWS_BUCKET }}/cv/robots.txt
         aws s3 sync online-resume/_site/assets s3://${{ secrets.AWS_BUCKET }}/assets
 
     - name: Invalidate CloudFront
