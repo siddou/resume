@@ -14,7 +14,7 @@
 
         {% if skills.levels and skills.levels[0].name %}
         <div class="levels">
-            <table class="charts-css bar stacked show-labels data-spacing-5" style="height: calc({{ skills.levels.size }} * 25px)">
+            <table aria-describedby="mydesc" class="charts-css bar stacked show-labels data-spacing-5" style="height: calc({{ skills.levels.size }} * 25px)">
                 <tbody>
                     {% for level in skills.levels %}
                     <tr>

@@ -46,9 +46,9 @@ experiences:
       tag:
       location: Paris
       details: |
-        + Work closely with members of the Product Design & Development organization, advocating design decisions to reduce the complexity, improve the resiliency and supportability of future systems.
-        + Provide technical support and problem resolution on complex and moderately complex issues.
-        + Manage small to medium-sized projects or portions of large projects and assist in resolving issues and planning for new applications and services.
+        + Worked closely with members of the Product Design & Development organization, advocating design decisions to reduce the complexity, improve the resiliency and supportability of future systems.
+        + Provided technical support and problem resolution on complex and moderately complex issues.
+        + Managed small to medium-sized projects or portions of large projects and assist in resolving issues and planning for new applications and services.
         + Worked on multiple migration from on-premises to VMC/AWS for multiple million USD products revenues.
         + Delivered multi-regions terraform code blueprints for serverless application in AWS.
 

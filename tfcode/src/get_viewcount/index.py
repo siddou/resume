@@ -3,18 +3,7 @@ import boto3
 client = boto3.client('dynamodb')
 TableName = 'cloud-resume-stats'
 
-def lambda_handler(event, context):
-
-    '''
-    data = client.get_item(
-        TableName='cloud-resume-stats',
-        Key = {
-            'stat': {'S': 'view-count'}
-        }
-    )
-    '''
-
-
+def lambda_handler():
     response = client.update_item(
         TableName='cloud-resume-stats',
         Key = {
