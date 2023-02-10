@@ -2,14 +2,14 @@ basic:
   name: Mathieu Albertini
   title: Solutions Architect
   avatar:
-    display: true
+    display: false
     path: profile.png
 
 contact:
   location:
   email: mathieualbertini@duck.com
-  phone: +33-684963858
-  website: malbertini.ovh
+  phone: 0684963858
+  website:
   wechat:
   whatsapp:
   telegram:
@@ -27,7 +27,7 @@ contact:
 
 profile:
   display: true
-  title: Profile
+  title: Summary
   details: |
     + Connecting people with technology solutions that are easy to use, affordable, and sustainable over time.
     + Capable of leading technical people in customer-facing environments.
@@ -38,7 +38,7 @@ profile:
 
 experiences:
   display: true
-  title: Experiences
+  title: Work Experience
   items:
     - role: Senior Principal Technical Architect
       time: 2018.06 - 2023.01
@@ -46,11 +46,12 @@ experiences:
       tag:
       location: Paris
       details: |
+        + Played the role of lead architect in the migration of on-premises application workloads to AWS cloud & VMWare on Cloud (VMC), saving over 15% cost for each product team
+        + Designed private & hybrid cloud – based solutions with High Availability (HA) & Disaster Recovery (DR) capabilities for $5M+ products revenues.
         + Worked closely with members of the Product Design & Development organization, advocating design decisions to reduce the complexity, improve the resiliency and supportability of future systems.
         + Provided technical support and problem resolution on complex and moderately complex issues.
         + Managed small to medium-sized projects or portions of large projects and assist in resolving issues and planning for new applications and services.
-        + Worked on multiple migration from on-premises to VMC/AWS for multiple million USD products revenues.
-        + Delivered multi-regions terraform code blueprints for serverless application in AWS.
+        + Delivered multi-regions cloudformation & terraform code blueprints for serverless application in AWS.
 
     - role: Principal Technical Architect
       time: 2012.11 - 2018.06
@@ -58,8 +59,9 @@ experiences:
       tag:
       location: Paris
       details: |
-        + Network and systems infrastructure lead manager of a platform delivering over 2 M EUR per year.
-        + Designed and set-up an open-source scalable IT infrastructure across two regions with configuration management tools, strong emphasis on security, high availability, monitoring, and alerts.
+        + Network and systems infrastructure lead manager of a platform delivering over €2M annually.
+        + Designed and set-up an open-source scalable IT infrastructure across two regions with configuration management tools, strong emphasis on security, high availability, monitoring, and alerts for 100+ Linux servers.
+        + Implemented Gitlab pipelines achieving a productivity gain of over 50% as measured by working hours.
         + Wrote and maintained the IT security policy, dispensing annual formation to employees.
         + Established the BCP, conducting semi-annuals BCP Tests.
         + Leading IT projects to improve company workflow.
@@ -71,7 +73,7 @@ experiences:
       location: Paris
       details: |
         + KVM infrastructure migration to VMWare ESXI and SambaLDAP to Active Directory 2012.
-        + Created a dynamic map of the optical fiber network with real time alerts.
+        + Created a dynamic map of the optical fiber network with real time alerts for 50+ interconnected devices.
         + Set-up multiple network hardware across the datacenters including cisco, brocade, extreme.
 
     - role: System Administrator consultant
@@ -80,7 +82,7 @@ experiences:
       tag:
       location: Paris
       details: |
-        + Administered the day-to-day operations of the network for large companies. 
+        + Administered the day-to-day operations of the network for large companies.
         + Created and maintained standard operating procedures for technical teams.
 
 
@@ -105,22 +107,22 @@ skills:
   display: true
   title: Skills
   details: |
-    Softwares:
+    Technical:
     + AWS
-    + Linux, Windows
-    + Terraform, CloudFormation
-    + Ansible, Puppet
+    + Linux, Windows, Docker
+    + Terraform, CloudFormation, Ansible, Puppet
     + Github, Gitlab
-    + Docker, Podman
     + Apache, Nginx, Traefik
-    + Zabbix, Nagios
+    + Zabbix, Nagios, Centreon
     + MySQL
     + BIG IP F5, AVI Vantage
 
-    Languages:
-    + Shell
-    + Python
-
+    Soft:
+    + Collaboration
+    + Problem-solving
+    + Communication
+    + Time management
+    + Result-oriented
 
 
   # levels:
@@ -147,12 +149,12 @@ education:
 
 certificates:
   display: true
-  title: Certificates
+  title: Certifications
   items:
     - name: Certified Kubernetes Administrator (CKA) (IN PROGRESS)
       authority: The Linux Foundation
       time: 2023
-      link: 
+      link: https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/
       details: |
 
     - name: DevOps Foundation
@@ -173,7 +175,7 @@ certificates:
       link: https://www.credly.com/badges/cc9fd11b-7b1e-4e17-9824-b032ce936afd/public_url
       details: |
 
-    - name: CompTIA Security+ ce
+    - name: Security+ ce
       authority: CompTIA
       time: 2016
       link: https://www.credly.com/badges/23d841f3-1307-4e52-b82e-1fa30f15d61c/public_url
@@ -182,12 +184,11 @@ certificates:
     - name: Cisco Certified Network Associate
       authority: Cisco
       time: 2011
-      link:
+      link: https://cp.certmetrics.com/cisco/en/public/verify/credential/CSCO11946676
       details: |
-        Credential ID CSCO11946676
 
-    - name: LPIC-1LPIC-1
-      authority: Linux Professional Institute (LPI)
+    - name: Linux Professional Institute LPIC-1
+      authority: Linux Professional Institute
       time: 2010
       link: https://cs.lpi.org/caf/Xamman/certification/verify/LPI000194909/e9t9r5rnau
       details: |
@@ -228,7 +229,7 @@ languages:
     - idiom: French
       level: Native
     - idiom: English
-      level: Professional
+      level: Proficient
 
 interests:
   display: false

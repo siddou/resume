@@ -8,26 +8,21 @@
     <div class="section-content">
         {% for graduation in education.items %}
         <div class="item">
+            <div class="major">{{ graduation.degree }} {{ graduation.major }}</div>
+            <!-- <div class="university">{{ graduation.university }}</div> -->
 
-            <div class="upper-row">
-                <div class="university">{{ graduation.university }}</div>
-                <div class="time">{{ graduation.time }}</div>
-            </div>
-
-            <div class="upper-row">
-                <div class="major">{{ graduation.major }}</div>
-                <div class="degree"><i class="fa-solid fa-graduation-cap"></i> {{ graduation.degree }}</div>
-            </div>
+        <div class="upper-row">
+            <div class="university">{{ graduation.university }}</div>
+            <div class="time">{{ graduation.time }}</div>
+        </div>
 
             {% if graduation.details %}
-            <div class="details">
-                <div class="markdown">
-                    {{ graduation.details | markdownify }}
-                </div>
+        <div class="details">
+            <div class="markdown">
+                {{ graduation.details | markdownify }}
             </div>
-            {% endif %}
-
         </div>
+        {% endif %}
         {% endfor %}
     </div>
 </section>
