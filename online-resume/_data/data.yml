@@ -60,7 +60,7 @@ experiences:
       location: Paris
       details: |
         + Network and systems infrastructure lead manager of a platform delivering over €2M annually.
-        + Designed and set-up an open-source scalable IT infrastructure across two regions with configuration management tools, strong emphasis on security, high availability, monitoring, and alerts for 100+ Linux servers.
+        + Designed an open-source scalable IT infrastructure across two regions, with configuration management tools, strong emphasis on security, high availability, monitoring for 100+ Linux servers.
         + Implemented Gitlab pipelines achieving a productivity gain of over 50% as measured by working hours.
         + Wrote and maintained the IT security policy, dispensing annual formation to employees.
         + Established the BCP, conducting semi-annuals BCP Tests.
@@ -108,14 +108,12 @@ skills:
   title: Skills
   details: |
     Technical:
-    + AWS
-    + Linux, Windows, Docker
+    + AWS, Linux, Windows, Docker
     + Terraform, CloudFormation, Ansible, Puppet
     + Github, Gitlab
-    + Apache, Nginx, Traefik
+    + Apache, Nginx, Traefik, BIG IP F5, AVI Vantage
     + Zabbix, Nagios, Centreon
     + MySQL
-    + BIG IP F5, AVI Vantage
 
     Soft:
     + Collaboration
