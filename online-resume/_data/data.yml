@@ -2,7 +2,7 @@ basic:
   name: Mathieu Albertini
   title: Solutions Architect
   avatar:
-    display: false
+    display: true
     path: profile.png
 
 contact:
