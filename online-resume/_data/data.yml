@@ -6,7 +6,7 @@ basic:
     path: profile.png
 
 contact:
-  location:
+  location: Paris
   email: mathieualbertini@duck.com
   phone: 0684963858
   website:
@@ -51,7 +51,7 @@ experiences:
         + Worked closely with members of the Product Design & Development organization, advocating design decisions to reduce the complexity, improve the resiliency and supportability of future systems.
         + Provided technical support and problem resolution on complex and moderately complex issues.
         + Managed small to medium-sized projects or portions of large projects and assist in resolving issues and planning for new applications and services.
-        + Delivered multi-regions cloudformation & terraform code blueprints for serverless application in AWS.
+        + Delivered multi-regions Cloudformation & Terraform code blueprints for serverless application in AWS.
 
     - role: Principal Technical Architect
       time: 2012.11 - 2018.06
