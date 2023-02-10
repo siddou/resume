@@ -28,6 +28,11 @@ resource "github_actions_secret" "GH_INFRACOST_API_KEY" {
   secret_name     = "INFRACOST_API_KEY"
   plaintext_value = var.INFRACOST_API_KEY
 }
+resource "github_actions_secret" "GH_SONAR_TOKEN" {
+  repository      = "resume"
+  secret_name     = "SONAR_TOKEN"
+  plaintext_value = var.SONAR_TOKEN
+}
 resource "aws_iam_user" "GH_SA" {
   name = "GH_SA"
 }
