@@ -115,12 +115,12 @@ skills:
     + Zabbix, Nagios, Centreon
     + MySQL
 
-    Soft:
-    + Collaboration
-    + Problem-solving
-    + Communication
-    + Time management
-    + Result-oriented
+  # Soft:
+  # + Collaboration
+  # + Problem-solving
+  # + Communication
+  # + Time management
+  # + Result-oriented
 
 
   # levels:
