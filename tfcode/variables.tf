@@ -5,6 +5,7 @@ variable "AWS_BUCKET" {}
 variable "AWS_DOMAIN_NAME" {}
 variable "COUNTAPI" {}
 variable "INFRACOST_API_KEY" {}
+variable "SONAR_TOKEN" {}
 variable "OWNER" {
   type = string
 }

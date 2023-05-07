@@ -1,8 +1,8 @@
 basic:
   name: Mathieu Albertini
-  title: Solutions Architect
+  title: Technical Architect
   avatar:
-    display: true
+    display: false
     path: profile.png
 
 contact:
@@ -13,7 +13,7 @@ contact:
   wechat:
   whatsapp:
   telegram:
-  github: siddou/resume
+  # github: siddou/resume
   gitlab:
   bitbucket:
   googlescholar:
@@ -31,10 +31,10 @@ profile:
   details: |
     + Connecting people with technology solutions that are easy to use, affordable, and sustainable over time.
     + Capable of leading technical people in customer-facing environments.
+    + Able to set up vital infrastructure components in the Clouds or On-Prem
+    + Comfortable working with virtualization and containers in large-scale environments.
     + Strong skills with configuration management tools and automation.
     + Extensive experience with the configuration, hardening, and maintenance of various Linux distributions.
-    + Able to set up vital infrastructure components in the Clouds or On-Prem, including load balancers, LDAP, DNS, MAIL, web/application servers.
-    + Comfortable working with virtualization and containers in large-scale environments.
 
 experiences:
   display: true
@@ -61,10 +61,11 @@ experiences:
       details: |
         + Network and systems infrastructure lead manager of a platform delivering over €2M annually.
         + Designed an open-source scalable IT infrastructure across two regions, with configuration management tools, strong emphasis on security, high availability, monitoring for 100+ Linux servers.
-        + Implemented Gitlab pipelines achieving a productivity gain of over 50% as measured by working hours.
+        + Implemented Gitlab pipelines achieving a productivity gain of over 20% as measured by working hours.
         + Wrote and maintained the IT security policy, dispensing annual formation to employees.
         + Established the BCP, conducting semi-annuals BCP Tests.
         + Leading IT projects to improve company workflow.
+        + Lead a team consisting of one engineer.
 
     - role: System Engineer
       time: 2011.10 - 2012.10
@@ -115,6 +116,8 @@ skills:
     + Zabbix, Nagios, Centreon
     + MySQL
 
+    Languages:
+    + Shell, Python
   # Soft:
   # + Collaboration
   # + Problem-solving
